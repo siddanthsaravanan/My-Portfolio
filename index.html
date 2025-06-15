@@ -1,108 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello! I'm Sid :)</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello!&nbsp;I'm&nbsp;Sid&nbsp;:)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!--Added-Unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Added Unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="shortcut icon" type="image/png" href="assets/img/"> --> 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
+ <!--TODO-->
+        <!-- MS Tile - for Microsoft apps-->
+        <meta name="msapplication-TileImage" content="" />    
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+        <!-- HTML Meta Tags -->
+        <title>...</title>
+        <meta name="description" content="">
 
-    <!-- Vanta.js dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
 
-    <style>
-      #vanta-bg {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -1; /* Push behind content */
-      }
-    </style>
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="">
+        <meta property="twitter:domain" content="">
+        <meta property="twitter:url" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
 
-    <!-- Google Analytics (if needed) -->
-    <script async src=""></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-2367QRTG56');
-    </script>
+        <!-- Google tag (gtag.js) -->
+        <script async src=""></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2367QRTG56');
+        </script>
 </head>
-
 <body>
-  <!-- Vanta background target -->
-  <div id="vanta-bg"></div>
+     <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Sid&nbsp;Saravanan</a>
 
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">Sid Saravanan</a>
+                <!--Navigation-Note:The"uiluil-estatenav_icon"=Icons-->
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list grid">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class="uil uil-estate nav__icon"></i> Home
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class="uil uil-user nav__icon"></i> About Me
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#education" class="nav__link">
-              <i class="uil uil-setting nav__icon"></i> Education
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">
-              <i class="uil uil-briefcase-alt nav__icon"></i> Work
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">
-              <i class="uil uil-message nav__icon"></i> Contact
-            </a>
-          </li>
-        </ul>
-      </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About&nbsp;Me
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class="uil uil-setting nav__icon"></i> Education
+                            </a>
+                        </li>
 
-      <div class="nav__btns">
-        <i class="uil uil-moon change-theme" id="theme-button"></i>
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="uil uil-apps"></i>
-        </div>
-      </div>
-    </nav>
-  </header>
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Work
+                            </a>
+                        </li>
 
-  <!-- Initialize Vanta after DOM is loaded -->
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      VANTA.TOPOLOGY({
-        el: "#vanta-bg",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x4ff0b7,
-        backgroundColor: 0xffffff,
-      });
-    });
-  </script>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                        <!--
+                        <li class="nav__item">
+                            <a href="resume.html" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Resume
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme Change Buttons -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 </body>
 </html>
