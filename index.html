@@ -100,5 +100,62 @@
                 </div>
             </nav>
         </header>
-</body>
+        <section id="threejs-section">
+            <div id="three-container"></div>
+        </section>
+         <style>
+    #three-container {
+        width: 300px;
+        height: 200px;
+        margin: 2rem auto; /* optional: center it */
+    }
+    </style>
+
+<script type="module">
+    import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js";
+    import { animate, frame } from "https://cdn.jsdelivr.net/npm/motion@12.16.0/+esm";
+
+    const main = document.getElementById("three-container");
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+        25,
+        main.offsetWidth / main.offsetHeight,
+        0.1,
+        1000
+    );
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(main.offsetWidth, main.offsetHeight);
+    renderer.setClearColor(0xffffff, 0); // transparent background
+    main.appendChild(renderer.domElement);
+
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshPhongMaterial({ color: 0x4ff0b7 });
+    const cube = new THREE.Mesh(geometry, material);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    directionalLight.position.set(2, 2, 2);
+
+    const ambientLight = new THREE.AmbientLight(0x404040);
+    scene.add(ambientLight);
+    scene.add(directionalLight);
+    scene.add(cube);
+
+    camera.position.z = 5;
+
+    function rad(deg) {
+        return deg * (Math.PI / 180);
+    }
+
+    // Render loop using Motion
+    frame.render(() => renderer.render(scene, camera), true);
+
+    // Animate rotation
+    animate(
+        cube.rotation,
+        { y: rad(360), z: rad(360) },
+        { duration: 10, repeat: Infinity, ease: "linear" }
+    );
+    </script>
+    </body>
 </html>
