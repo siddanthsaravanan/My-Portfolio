@@ -1,3 +1,14 @@
+/* ====== Vanta Background ====== */
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* push behind all content */
+}
+
 /* ====== Google Font ====== */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -12,17 +23,6 @@ html, body {
 
 body {
   padding-top: 80px; /* avoid overlap under fixed header */
-}
-
-/* ====== Vanta Background ====== */
-#vanta-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1; /* push behind all content */
 }
 
 /* ====== Name Overlay Animation ====== */
