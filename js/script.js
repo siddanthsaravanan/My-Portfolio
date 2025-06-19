@@ -1,16 +1,19 @@
 /*========== Vanta.js Background Specifications ==========*/
-VANTA.TOPOLOGY({
-  el: "#vantajs",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x4e965a,
-  backgroundColor: 0x20251d
-})
+VANTA.FOG({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xcf9d00,
+            midtoneColor: 0xcd0f00,
+            lowlightColor: 0x1900be,
+            baseColor: 0x4d1f0c,
+            blurFactor: 0.25,
+            speed: 2.00,
+            zoom: 1.60
+        });
 
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
