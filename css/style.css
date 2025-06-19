@@ -58,3 +58,14 @@
     transform: translateX(0);
   }
 }
+
+.header {
+  position: fixed;      /* Keep it fixed at top */
+  width: 100%;          /* Full width */
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.15);  /* Slightly transparent white */
+  backdrop-filter: blur(10px);                   /* Frosted glass effect */
+  z-index: 10;         /* Above Vanta bg */
+  transition: background-color 0.3s ease;
+}
