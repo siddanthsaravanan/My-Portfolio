@@ -18,6 +18,25 @@
   color: rgb(255, 255, 255);
   text-align: center;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #20251d;
+}
+
+/* Cover full screen behind everything */
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Your existing name animation and header styles go here */
 
 /*Name Container*/
 
