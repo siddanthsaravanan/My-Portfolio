@@ -127,5 +127,28 @@
             zoom: 1.60
         });
         </script>
-     </body>
+<script>
+  // Scroll show/hide header
+  let lastScroll = 0;
+  const header = document.getElementById("header");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > lastScroll) {
+      header.classList.add("hide");
+    } else {
+      header.classList.remove("hide");
+    }
+    lastScroll = currentScroll;
+  });
+
+  // Mobile toggle menu
+  const navToggle = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+  </script>
+  </body>
 </html>
