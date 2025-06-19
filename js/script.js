@@ -1,4 +1,4 @@
-/*Vanta Js Background*/
+/*========== Vanta.js Background Specifications ==========*/
 VANTA.TOPOLOGY({
   el: "#vantajs",
   mouseControls: true,
