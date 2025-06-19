@@ -46,6 +46,9 @@
 
         gtag('config', 'G-2367QRTG56');
         </script>
+     <!--Vanta,js_Topology-->   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
 </head>
 <body>
      <header class="header" id="header">
@@ -100,5 +103,32 @@
                 </div>
             </nav>
         </header>
+  <div id="vanta-bg">
+    <div class="intro-content">
+      <h1>Hi, I'm Siddanth</h1>
+      <p>Welcome to my portfolio</p>
+    </div>
+  </div>
+
+  <!-- Your existing root div (if React) -->
+  <div id="root"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+  <script>
+    VANTA.TOPOLOGY({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x00ffff,
+      backgroundColor: 0x000000
+    });
+  </script>
 </body>
 </html>
