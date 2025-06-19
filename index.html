@@ -51,6 +51,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
 </head>
 <body>
+    <div id="vanta-bg"></div>
      <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">Sid&nbsp;Saravanan</a>
@@ -103,5 +104,19 @@
                 </div>
             </nav>
         </header>
+    <script>
+    VANTA.TOPOLOGY({
+  el: "#vanta-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x4e965a,
+  backgroundColor: 0x20251d
+});
+</script>
 </body>
 </html>
