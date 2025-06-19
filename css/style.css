@@ -1,3 +1,16 @@
+/* ====== Reset and Base ====== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #20251d; /* fallback before Vanta loads */
+  font-family: 'Archivo', sans-serif;
+}
+
+body {
+  padding-top: 80px; /* avoid overlap under fixed header */
+}
+
 /* ====== Vanta Background ====== */
 #vanta-bg {
   position: fixed;
@@ -12,18 +25,6 @@
 /* ====== Google Font ====== */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ====== Reset and Base ====== */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background: #20251d; /* fallback before Vanta loads */
-  font-family: 'Archivo', sans-serif;
-}
-
-body {
-  padding-top: 80px; /* avoid overlap under fixed header */
-}
 
 /* ====== Name Overlay Animation ====== */
 .name-container {
