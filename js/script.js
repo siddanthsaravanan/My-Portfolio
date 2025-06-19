@@ -1,3 +1,17 @@
+/*Vanta Js Background*/
+VANTA.TOPOLOGY({
+  el: "#vantajs",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x4e965a,
+  backgroundColor: 0x20251d
+})
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
      navToggle = document.getElementById('nav-toggle'),
