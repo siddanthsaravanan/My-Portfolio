@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.intro-content {
+.name-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,6 +17,46 @@
   z-index: 1;
   color: rgb(255, 255, 255);
   text-align: center;
+}
+
+/*Name Container*/
+
+.name-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  white-space: nowrap;
+}
+
+.static {
+  color: #333;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  /* green background bar behind the text */
+  background: #00ff40;
+  padding: 0 0.2em;
+  mix-blend-mode: screen;
+  /* Start off-screen on left */
+  transform: translateX(-100%);
+  animation: slidebar 2s ease-in-out forwards;
+}
+
+/* Animation: slide from left to right */
+@keyframes slidebar {
+  to {
+    transform: translateX(0);
+  }
 }
 
 /*==================== VARIABLES CSS ====================*/
