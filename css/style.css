@@ -11,8 +11,8 @@
 
 .name-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 70%;
   transform: translate(-50%, -50%);
   z-index: 1;
   color: rgb(255, 255, 255);
@@ -35,7 +35,7 @@
 }
 
 .static {
-  color: #333;
+  color: #ffffff00;
 }
 
 .overlay {
@@ -43,8 +43,8 @@
   top: 0;
   left: 0;
   color: white;
-  /* green background bar behind the text */
-  background: #00ff40;
+  /* creame background bar behind the text */
+  background: #FFFDD0;
   padding: 0 0.2em;
   mix-blend-mode: screen;
   /* Start off-screen on left */
