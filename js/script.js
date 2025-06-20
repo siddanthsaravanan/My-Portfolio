@@ -15,3 +15,12 @@ VANTA.FOG({
             zoom: 1.60
         });
 
+/*========== Typewriter Text ==========*/
+
+new Typed(".typed-text", {
+  strings: ["a Developer.", "a Designer.", "an Explorer.", "Sid Saravanan."],
+  typeSpeed: 70,
+  backSpeed: 40,
+  loop: true,
+  showCursor: true,
+});
