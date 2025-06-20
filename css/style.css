@@ -144,19 +144,21 @@ html, body {
   font-family: 'Archivo', sans-serif;
 }
 
-.typed-text {
-  display: block;
-  font-weight: 600;
-  color: #ebebeb;
-  margin-top: 0.5rem;
-
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
 .typewriter-box {
   position: relative;
   display: inline-block;
   overflow: hidden;
+}
+
+.typed-text {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #ebebeb;
+  animation: glow 2s ease-in-out infinite alternate;
+  white-space: nowrap;
 }
 
 .box-overlay {
@@ -165,15 +167,16 @@ html, body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #000; /* match your page bg to cover text */
-  animation: revealOverlay 3s steps(40) infinite;
+  background-color: #000; /* match background */
+  animation: revealOverlay 4s steps(40) infinite;
+  z-index: 2;
   pointer-events: none;
 }
 
 @keyframes revealOverlay {
   0% { transform: translateX(0); }
-  50% { transform: translateX(100%); }
-  50.1% { transform: translateX(-100%); } /* reset behind text */
+  49.9% { transform: translateX(100%); }
+  50% { transform: translateX(-100%); }
   100% { transform: translateX(0); }
 }
 
