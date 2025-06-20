@@ -136,10 +136,10 @@ html, body {
 /*Typewriter Text*/
 
 .name-container {
-  text-align: center;
+  text-align: left;
   position: relative;
   top: 35vh;
-  font-size: 2rem;
+  font-size: 5rem;
   color: white;
   font-family: 'Archivo', sans-serif;
 }
@@ -147,7 +147,7 @@ html, body {
 .typed-text {
   display: block;
   font-weight: 600;
-  color: #38bdf8;
+  color: #ebebeb;
   margin-top: 0.5rem;
 
   animation: glow 2s ease-in-out infinite alternate;
