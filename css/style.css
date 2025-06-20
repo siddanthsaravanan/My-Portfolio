@@ -1,7 +1,6 @@
 /*RandomGoogleFonts*/
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 /* Remove default margin and padding */
 html, body {
   margin: 0;
@@ -38,7 +37,7 @@ html, body {
 
 /* Container inside nav */
 .nav.container {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -67,6 +66,11 @@ html, body {
   gap: 2.5rem;
   margin: 0;
   padding: 0;
+  align-items: center; /* vertical center */
+}
+
+.nav__item {
+  margin: 0;
 }
 
 /* Individual nav links */
@@ -75,9 +79,18 @@ html, body {
   text-decoration: none;
   font-size: 1.05rem;
   font-weight: 500;
-  position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center; /* center icon + text */
+  gap: 0.5rem;
+  position: relative; /* Needed for ::after underline */
+  line-height: 1.4;
   transition: color 0.3s ease;
+}
+
+.nav__link i {
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 /* Hover underline */
