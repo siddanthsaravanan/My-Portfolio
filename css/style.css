@@ -167,10 +167,15 @@ html, body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #000; /* match background */
-  animation: revealOverlay 4s steps(40) infinite;
+  background-color: #000;
+  transform: translateX(0); /* initial position */
   z-index: 2;
   pointer-events: none;
+  transition: transform 1.4s steps(30);
+}
+
+.box-overlay.animate {
+  transform: translateX(100%);
 }
 
 @keyframes revealOverlay {
