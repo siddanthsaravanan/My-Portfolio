@@ -108,9 +108,3 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive (basic hiding menu on small screens — optional for now) */
-@media (max-width: 768px) {
-  .nav__list {
-    display: none; /* You can replace this with a hamburger toggle menu later */
-  }
-}
