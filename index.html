@@ -62,11 +62,17 @@
     }
   });
   </script>
+
+<!--Typing "Who I am" Intro-->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 <body>
     <div id="vanta-bg">
   <div class="name-container">
     <span class="name overlay">Sid Saravanan</span>
+    <span class="typed-text"></span>
   </div>
 </div>
      <header class="header" id="header">
@@ -165,5 +171,22 @@
     }
   });
   </script>
-  </body>
+
+  <!--Intro "Who I am"-->
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed(".typed-text", {
+      strings: ["a Developer.", "a Designer.", "an Explorer.", "Sid Saravanan."],
+      typeSpeed: 70,
+      backSpeed: 40,
+      backDelay: 1500,
+      startDelay: 500,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
+  });
+  </script>
+</body>
 </html>

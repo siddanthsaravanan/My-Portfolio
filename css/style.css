@@ -133,3 +133,30 @@ html, body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
+.name-container {
+  text-align: center;
+  position: relative;
+  top: 35vh;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Archivo', sans-serif;
+}
+
+.typed-text {
+  display: block;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-top: 0.5rem;
+
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #38bdf8, 0 0 10px #38bdf8;
+  }
+  to {
+    text-shadow: 0 0 20px #38bdf8, 0 0 30px #38bdf8;
+  }
+}
+
