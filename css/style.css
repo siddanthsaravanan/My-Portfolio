@@ -103,6 +103,11 @@
   color: #fff;
 }
 
+.header.scrolled {
+  background-color: rgba(15, 23, 42, 0.9); /* more solid background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
 /* Responsive (basic hiding menu on small screens — optional for now) */
 @media (max-width: 768px) {
   .nav__list {
