@@ -178,13 +178,6 @@ html, body {
   transform: translateX(100%);
 }
 
-@keyframes revealOverlay {
-  0% { transform: translateX(0); }
-  49.9% { transform: translateX(100%); }
-  50% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
-}
-
 @keyframes glow {
   from {
     text-shadow: 0 0 5px #38bdf8, 0 0 10px #38bdf8;
