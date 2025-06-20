@@ -1,7 +1,7 @@
 /*RandomGoogleFonts*/
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*Vanta.js Background Specifications*/
+/* Vanta.js Background */
 #vanta-bg {
   width: 100%;
   height: 100vh;
@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-/* Header Fixed and Frosted Glass */
+/* Header Styling */
 .header {
   position: fixed;
   top: 0;
@@ -18,11 +18,11 @@
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-/* Container for nav content */
-nav.container {
+/* Container inside nav */
+.nav.container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -31,16 +31,22 @@ nav.container {
   align-items: center;
 }
 
-/* Logo style */
-.logo {
+/* Logo styling */
+.nav__logo {
   font-weight: 700;
   font-size: 1.5rem;
-  cursor: default;
-  color: #fff;
+  color: white;
+  text-decoration: none;
 }
 
-/* Navigation Links */
-.nav-links {
+/* Menu styles */
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
+
+/* List styles */
+.nav__list {
   list-style: none;
   display: flex;
   gap: 2.5rem;
@@ -48,49 +54,23 @@ nav.container {
   padding: 0;
 }
 
-.nav-links li a {
+/* Individual nav links */
+.nav__link {
   color: white;
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.1rem;
+  font-weight: 500;
   position: relative;
-  padding-bottom: 4px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding-bottom: 4px;
   transition: color 0.3s ease;
 }
 
-.nav-links li a::after {
+/* Hover underline */
+.nav__link::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #007aff;
-  transition: width 0.35s ease;
-  border-radius: 2px;
+  left: 5px;
 }
-
-.nav-links li a:hover {
-  color: #007aff;
-}
-
-.nav-links li a:hover::after {
-  width: 100%;
-}
-
-/* Icon styling */
-.icon {
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-}
-
-/* Icon grows slightly on hover */
-.nav-links li a:hover .icon {
-  transform: scale(1.2);
-}
-
