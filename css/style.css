@@ -15,12 +15,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(15, 23, 42, 0.85); /* dark navy with slight transparency */
+  background-color: rgba(15, 23, 42, 0.4); /* dark navy transparent */
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
 }
+
 
 /* Container inside nav */
 .nav.container {
@@ -57,7 +59,7 @@
 
 /* Individual nav links */
 .nav__link {
- color: #e2e8f0;
+  color: #f8fafc; /* bright white */
   text-decoration: none;
   font-size: 1.05rem;
   font-weight: 500;
@@ -67,6 +69,10 @@
 }
 
 /* Hover underline */
+.nav__link:hover {
+  color: #38bdf8;
+}
+
 .nav__link::after {
   content: '';
   position: absolute;
@@ -74,12 +80,8 @@
   bottom: -5px;
   width: 0%;
   height: 2px;
-  background-color: #38bdf8; /* sky blue underline */
+  background-color: #38bdf8;
   transition: width 0.3s ease;
-}
-
-.nav__link:hover {
-  color: #38bdf8;
 }
 
 .nav__link:hover::after {
