@@ -186,3 +186,17 @@ html, body {
     text-shadow: 0 0 20px #38bdf8, 0 0 30px #38bdf8;
   }
 }
+
+/* Fancy Cursor */
+
+#typewriter::after {
+  content: "|";
+  animation: blink 1s infinite;
+  margin-left: 2px;
+  color: #38bdf8;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

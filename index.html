@@ -69,7 +69,7 @@
   <span class="name overlay">Hello There! I am...</span>
   <span class="typewriter-box">
     <span class="typed-text"></span>
-    <span class="box-overlay"></span>
+    <span class="box-overlay" id="typewriter"></span>
   </span>
 </div>
      <header class="header" id="header">
@@ -170,22 +170,46 @@
   </script>
 
   <!--Intro "Who I am"-->
-
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.min.js"></script>
   
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    new Typed(".typed-text", {
-      strings: ["a mathematician.", "an artist.", "an explorer.", "a researcher"],
-      typeSpeed: 70,
-      backSpeed: 40,
-      backDelay: 1500,
-      startDelay: 500,
-      loop: true,
-      showCursor: true,
-      cursorChar: "|"
-    });
+  const messages = ["a mathematician.", "an artist.", "an explorer.", "a researcher."];
+  const typeTarget = document.getElementById("typewriter");
+
+  let msgIndex = 0;
+  let charIndex = 0;
+  let typing = true;
+
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  async function typewriter() {
+    while (true) {
+      const msg = messages[msgIndex];
+      if (typing) {
+        if (charIndex <= msg.length) {
+          typeTarget.textContent = msg.slice(0, charIndex++);
+          await sleep(70);
+        } else {
+          typing = false;
+          await sleep(1500);
+        }
+      } else {
+        if (charIndex > 0) {
+          typeTarget.textContent = msg.slice(0, --charIndex);
+          await sleep(40);
+        } else {
+          typing = true;
+          msgIndex = (msgIndex + 1) % messages.length;
+          await sleep(500);
+        }
+      }
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    typewriter();
   });
-  </script>
+</script>
+
 </body>
 </html>

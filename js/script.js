@@ -15,26 +15,3 @@ VANTA.FOG({
             zoom: 1.60
         });
 
-/*========== Typewriter Text ==========*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  const boxOverlay = document.querySelector(".box-overlay");
-
-  const typed = new Typed(".typed-text", {
-    strings: ["a mathematician.", "an artist.", "an explorer.", "a researcher"],
-    typeSpeed: 70,
-    backSpeed: 40,
-    backDelay: 1500,
-    startDelay: 500,
-    loop: true,
-    showCursor: true,
-    cursorChar: "|",
-    preStringTyped: function () {
-      // Restart the swipe animation on each new string
-      boxOverlay.classList.remove("animate");
-      void boxOverlay.offsetWidth; // trigger reflow to restart animation
-      boxOverlay.classList.add("animate");
-    }
-  });
-});
-
